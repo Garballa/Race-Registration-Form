@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Registration form</title>
+  </head>
+  <body>
+    <h1>Race Registration!</h1>
+    <form action="/">
+      <div id="firstAndLastNamesDiv">
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="Enter first name here"
+        />
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Enter last name here"
+        />
+      </div>
+      <div id="run-select-div">
+        <h2>Select a Race</h2>
+        <p>
+          <input type="radio" name="fun-run" id="fun-run" />
+          <label for="fun-run">Fun Run 5k</label>
+        </p>
+        <p>
+          <input type="radio" name="half" id="half" />
+          <label for="half">Half Marathon</label>
+        </p>
+        <p>
+          <input type="radio" name="full" id="full" />
+          <label for="full">Full Marathon</label>
+        </p>
+      </div>
+      <div id="email-pasword-div">
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your email here"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Enter your password here"
+          />
+        </p>
+      </div>
+      <div id="age-select-div">
+        <p>
+          <label for="age-select">Select Age Group</label>
+          <select name="age-select" id="age-select">
+            <option value="under 18">under 18</option>
+            <option value="over 18">over 18</option>
+          </select>
+        </p>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
